@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Anirban Ghosh | Crafting Code & Digital Solutions</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -22,10 +23,6 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <!-- <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I'm <span>Anirban Ghosh,</span><br>a passionate MERN Stack Developer.</h1>
-            </div> -->
         </div>
     </div>    
 
@@ -249,12 +246,15 @@
 
     <script>
         var sidemenu = document.getElementById("sidemenu");
+        var menu = document.querySelector(".fa-solid.fa-bars");
 
         function openmenu(){
             sidemenu.style.right = "0";
+            menu.style.display= "none"; 
         }
         function closemenu(){
             sidemenu.style.right = "-200px";
+            menu.style.display= "block";
         }
     </script>
     <script>

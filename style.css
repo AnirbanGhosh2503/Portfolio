@@ -450,8 +450,12 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
     }
+    .fa-solid.fa-bars {
+        cursor: pointer;
+        transition: opacity 0.5s ease; /* Smooth transition for 'opacity' */
+    }
     nav ul {
-        background-color: teal;
+        background-color: rgba(0, 128, 128, 0.8); 
         position: fixed;
         top: 0;
         right: -200px;
